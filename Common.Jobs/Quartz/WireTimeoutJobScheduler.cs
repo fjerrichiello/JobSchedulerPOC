@@ -30,7 +30,7 @@ public class WireTimeoutJobScheduler(ISchedulerFactory _scheduler) : IWireTimeou
             .UsingJobData(JobConstants.WireTimeoutJob.JobData.WireNumber, wireNumber)
             .UsingJobData(JobConstants.WireTimeoutJob.JobData.MessageContainer, JsonSerializer.Serialize(jobDetail));
 
-        var postingDate = DateTimeOffset.UtcNow.AddMinutes(5);
+        var postingDate = DateTimeOffset.Now.AddSeconds(1);
 
         builder.StartAt(postingDate);
 

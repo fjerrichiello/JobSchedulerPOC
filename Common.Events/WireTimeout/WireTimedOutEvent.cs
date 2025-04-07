@@ -2,4 +2,5 @@
 
 namespace Common.Events.WireTimeout;
 
-public record WireTimedOutEvent(string WireNumber): Message;
+[MessageTags("Timeout")]
+public record WireTimedOutEvent(string WireNumber) : Message;

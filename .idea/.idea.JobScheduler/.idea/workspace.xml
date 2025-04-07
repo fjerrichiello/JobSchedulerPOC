@@ -10,15 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8625e62d-f9bb-408f-80de-290525aa6d5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JobScheduler.Api/JobScheduler.Api.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JobScheduler.Api/JobScheduler.Api.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JobScheduler.Api/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JobScheduler.Api/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JobScheduler.Api/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JobScheduler.Api/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JobScheduler.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.Jobs/Quartz/WireTimeoutJobScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/Quartz/WireTimeoutJobScheduler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744042538670</updated>
       <workItem from="1744042540335" duration="6522000" />
-      <workItem from="1744049226249" duration="1811000" />
+      <workItem from="1744049226249" duration="2166000" />
     </task>
     <servers />
   </component>
