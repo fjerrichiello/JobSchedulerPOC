@@ -16,6 +16,26 @@ public class WireTimeoutJobScheduler(ISchedulerFactory _scheduler) : IWireTimeou
         await scheduler.ScheduleJob(trigger);
     }
 
+
+    public async Task DeleteWireTimeoutJob(string wireNumber)
+    {
+        var scheduler = await _scheduler.GetScheduler();
+
+        var key = GetTriggerKey(wireNumber);
+        var exists = await scheduler.CheckExists(key);
+        if (exists)
+        {
+            try
+            {
+                await scheduler.UnscheduleJob(key);
+            }
+            catch (Exception ex)
+            {
+               //Error 
+            }
+        }
+    }
+
     private static TriggerKey GetTriggerKey(string wireNumber)
     {
         return new TriggerKey(wireNumber);

@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8625e62d-f9bb-408f-80de-290525aa6d5c" name="Changes" comment="" />
+    <list default="true" id="8625e62d-f9bb-408f-80de-290525aa6d5c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.JobScheduler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JobScheduler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.Jobs/Common.Jobs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/Common.Jobs.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.Jobs/Quartz/IWireTimeoutJobScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/IWireTimeoutJobScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobScheduler.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JobScheduler.Api/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/28b236b45b2069a1eda3696c06a51f4c6d17c924ff4ce494859ec9d23c707/HangfireServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9be94df8122ada21bc64cc3e064e3422463ce109348a21ff79cca62c7e66b/TriggerBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1f1afeb5be9f63605a77cf5c75fb3295bed2f36d49f486cb18569e7181df/IServiceCollectionQuartzConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JobScheduler.Api/CommandHandlers/Authors/AddAuthor/AddAuthorOperation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,7 +59,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2vPN1sMSfgrep3etlEWPl5f7rvg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -140,6 +146,9 @@
       <updated>1744042538670</updated>
       <workItem from="1744042540335" duration="6522000" />
       <workItem from="1744049226249" duration="2422000" />
+      <workItem from="1744208294305" duration="2068000" />
+      <workItem from="1746461647080" duration="22000" />
+      <workItem from="1749583326189" duration="727000" />
     </task>
     <servers />
   </component>
@@ -192,6 +201,18 @@
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

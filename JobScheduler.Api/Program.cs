@@ -1,7 +1,5 @@
 using Common;
 using Common.Jobs.Quartz;
-using GenericHandlers;
-using GenericHandlers.Persistence;
 using JobScheduler.Api;
 using JobScheduler.Api.CommandHandlers.Authors.AddAuthor;
 using JobScheduler.Api.Persistence;
@@ -23,6 +21,7 @@ services.AddEventHandlersAndNecessaryWork(typeof(AddAuthorOperation));
 services.AddQuartzServices(configuration);
 
 services.AddQuartzJobs();
+
 // Add Services
 
 services.AddScoped<IBookRepository, BookRepository>();
@@ -37,7 +36,6 @@ services.AddScoped<IUnitOfWork, UnitOfWork<ApplicationDbContext>>();
 services.AddDbContext<ApplicationDbContext>(options =>
     options.UseNpgsql(configuration.GetConnectionString("JobSchedulersDatabase")));
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -50,7 +48,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.AddGenericEndpoint();
-
 
 app.Run();
 
@@ -86,11 +83,11 @@ app.Run();
 // }
 
 // {
- // "source": "string",
- // "detailType": "MultipliedEvent",
- // "detail": {
- //     "body":{
- //         "Value1":4
- //     }
- // }
- // }
+// "source": "string",
+// "detailType": "MultipliedEvent",
+// "detail": {
+//     "body":{
+//         "Value1":4
+//     }
+// }
+// }

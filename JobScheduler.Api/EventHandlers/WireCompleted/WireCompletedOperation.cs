@@ -16,6 +16,12 @@ public class WireCompletedOperation(
     public async Task ExecuteAsync(MessageContainer<WireCompletedEvent, EventMetadata> container,
         WireCompletedVerifiedData data)
     {
-       await _scheduler.ScheduleWireTimeoutJob(container, data.WireNumber);
+        await _scheduler.ScheduleWireTimeoutJob(container, data.WireNumber);
+
+        /*
+        if(wire.Done/Fail for all){
+         await _scheduler.DeleteWireTimeoutJob(data.WireNumber);
+        }
+        */
     }
 }
