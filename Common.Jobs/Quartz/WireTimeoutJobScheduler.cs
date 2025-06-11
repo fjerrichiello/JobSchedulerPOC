@@ -5,6 +5,7 @@ using Quartz;
 
 namespace Common.Jobs.Quartz;
 
+// Schedules the jobs themselves using a key and message container
 public class WireTimeoutJobScheduler(ISchedulerFactory _scheduler) : IWireTimeoutJobScheduler
 {
     public async Task ScheduleWireTimeoutJob(MessageContainer<WireCompletedEvent, EventMetadata> jobDetail,
@@ -15,7 +16,6 @@ public class WireTimeoutJobScheduler(ISchedulerFactory _scheduler) : IWireTimeou
         var scheduler = await _scheduler.GetScheduler();
         await scheduler.ScheduleJob(trigger);
     }
-
 
     public async Task DeleteWireTimeoutJob(string wireNumber)
     {

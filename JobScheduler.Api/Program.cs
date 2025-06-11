@@ -18,6 +18,7 @@ services.AddSwaggerGen();
 
 services.AddEventHandlersAndNecessaryWork(typeof(AddAuthorOperation));
 
+//Add Quartz
 services.AddQuartzServices(configuration);
 
 services.AddQuartzJobs();

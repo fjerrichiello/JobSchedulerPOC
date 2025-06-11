@@ -6,6 +6,7 @@ using Quartz;
 
 namespace Common.Jobs.Quartz;
 
+//This is run when the job its self executes
 public class WireTimeoutJob(IEventPublisher _eventPublisher) : IJob
 {
     public async Task Execute(IJobExecutionContext context)

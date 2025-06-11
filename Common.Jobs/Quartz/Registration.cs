@@ -28,13 +28,18 @@ public static class Registration
     {
         var connectionString = configuration.GetConnectionString("JobSchedulersDatabase")!;
 
+        //Instance Id
         quartzConfigurator.SchedulerId = $"{name}-{Dns.GetHostName()}";
+        //Instance Name USed when clustering
         quartzConfigurator.SchedulerName = name;
+        //
         quartzConfigurator.InterruptJobsOnShutdown = false;
         quartzConfigurator.InterruptJobsOnShutdownWithWait = false;
 
-        quartzConfigurator.UseDefaultThreadPool(x => x.MaxConcurrency = 1);
+        //Max of 1 job run simultaneously
+        quartzConfigurator.UseDefaultThreadPool(x => x.MaxConcurrency = 3);
 
+        // Sets up Persistence against our db and uses the system text json serializer
         quartzConfigurator.UsePersistentStore(x =>
         {
             x.UseClustering();
@@ -47,6 +52,7 @@ public static class Registration
     {
         services.AddSingleton<IWireTimeoutJobScheduler, WireTimeoutJobScheduler>();
 
+        //Adds reference to the job and that it should be stored in the db
         services.AddQuartz(q =>
         {
             q.AddJob<WireTimeoutJob>(job =>

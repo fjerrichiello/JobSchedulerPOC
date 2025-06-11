@@ -11,9 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8625e62d-f9bb-408f-80de-290525aa6d5c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JobScheduler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JobScheduler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Jobs/Common.Jobs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/Common.Jobs.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common.Jobs/Quartz/IWireTimeoutJobScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/IWireTimeoutJobScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.Jobs/IWireTimeoutJobScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/Quartz/IWireTimeoutJobScheduler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.Jobs/Quartz/Registration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/Quartz/Registration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.Jobs/Quartz/WireTimeoutJob.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/Quartz/WireTimeoutJob.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common.Jobs/Quartz/WireTimeoutJobScheduler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common.Jobs/Quartz/WireTimeoutJobScheduler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JobScheduler.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/JobScheduler.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobScheduler.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/JobScheduler.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +29,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fjerrichiello&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:fjerrichiello/JobSchedulerPOC.git&quot;,
+    &quot;accountId&quot;: &quot;9c3dce69-93e5-4183-98ea-84ae59aa4c55&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/28b236b45b2069a1eda3696c06a51f4c6d17c924ff4ce494859ec9d23c707/HangfireServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9be94df8122ada21bc64cc3e064e3422463ce109348a21ff79cca62c7e66b/TriggerBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0a52d3cd71def8e55a902e37712418fd3c1930e8d1e1efd454ef8db515a2/QuartzOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/24baa99dd8f67b797750aa9e414d3aa0bddac232f5e0cf511c68cb9d1ad1558/OptionsServiceCollectionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/90bf9ac51b760d05d7e33d5306b3499ff3132dbb33490fd972f778663cce0fc/IJob.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1f1afeb5be9f63605a77cf5c75fb3295bed2f36d49f486cb18569e7181df/IServiceCollectionQuartzConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ec9fbca2c2583622a8c568c1dc3e610cef2d968db5e570538b3cc657b5e042/SchedulerBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JobScheduler.Api/CommandHandlers/Authors/AddAuthor/AddAuthorOperation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JobScheduler.Api/EventHandlers/WireCompleted/WireCompletedDataFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/JobScheduler.Api/EventHandlers/WireCompleted/WireCompletedOperation.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,6 +80,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -80,7 +98,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -149,6 +167,8 @@
       <workItem from="1744208294305" duration="2068000" />
       <workItem from="1746461647080" duration="22000" />
       <workItem from="1749583326189" duration="727000" />
+      <workItem from="1749655252472" duration="1107000" />
+      <workItem from="1749656401082" duration="3483000" />
     </task>
     <servers />
   </component>
@@ -163,19 +183,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Common.Jobs/Quartz/Registration.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\Users\FrankErrichiello\source\solo\JobScheduler\Common.Jobs\Quartz\Api\Registration.cs" containingFunctionPresentation="Method 'AddClusteredQuartzConfiguration'">
-            <startOffsets>
-              <option value="1268" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1327" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Common/DefaultHandlers/EventHandler.cs</url>
           <line>23</line>
           <properties documentPath="C:\Users\FrankErrichiello\source\solo\JobScheduler\Common\DefaultHandlers\EventHandler.cs" containingFunctionPresentation="Method 'HandleAsync'">
@@ -187,19 +194,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Common.Jobs/Quartz/WireTimeoutJobScheduler.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\FrankErrichiello\source\solo\JobScheduler\Common.Jobs\Quartz\WireTimeoutJobScheduler.cs" containingFunctionPresentation="Method 'GetTriggerKey'">
-            <startOffsets>
-              <option value="652" />
-            </startOffsets>
-            <endOffsets>
-              <option value="686" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
@@ -215,5 +209,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
